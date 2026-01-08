@@ -1,0 +1,20 @@
+{
+  "name": "Salesforce Development",
+  "image": "salesforce/salesforcedx:latest-full",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "salesforce.salesforcedx-vscode",
+        "salesforce.salesforcedx-vscode-apex",
+        "salesforce.salesforcedx-vscode-core",
+        "salesforce.salesforcedx-vscode-lightning",
+        "salesforce.salesforcedx-vscode-lwc"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "postCreateCommand": "sf version",
+  "forwardPorts": [5900, 8080, 9229]
+}
